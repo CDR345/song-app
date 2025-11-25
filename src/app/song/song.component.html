@@ -1,0 +1,9 @@
+<ul>
+<li>  
+    ID: {{song.id}}  TITLE: {{song.title}}  ARTIST: {{song.artist}} VOTE: {{song.votes}} <button (click)="clickVoteUp()">vote</button>
+    @if(isTopSong) {
+        TOP SONG!
+    }
+</li>
+</ul>
+

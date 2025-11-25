@@ -1,0 +1,6 @@
+<ul>
+    @for(song of songs; track song.id) {
+        <app-song [song]="song" (voteUp)="vote($event)" ></app-song>
+    }
+</ul>
+

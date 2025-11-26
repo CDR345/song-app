@@ -1,0 +1,27 @@
+:host{
+    display: block;
+    border: 1px solid green;
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+:host:hover{
+    display: block;
+    border: #f0f8ff 1px solid green;
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+button{
+    background-color: lightgray;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

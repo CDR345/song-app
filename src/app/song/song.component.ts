@@ -1,5 +1,5 @@
 import { Component,EventEmitter,Input,Output, ViewChild, ViewChildren } from '@angular/core';
-import { SongInterface } from '../data/SongInterface';
+import { SongInterface } from '../data/songInterface';
 
 @Component({
   selector: 'app-song',
@@ -10,11 +10,9 @@ import { SongInterface } from '../data/SongInterface';
 export class SongComponent {
   @Input({required: true}) song!: SongInterface;
   @Input() isTopSong: boolean = false;
-  @Output() voteUp = new EventEmitter<number>();
-  clickVoteUp() {
-    this.voteUp.emit(this.song.id);
-  }
 
-
+ voteUp() {this.song.votes++;}
+ voteDown(){ if(this.song.votes>=1)this.song.votes--;}
   
 }
+

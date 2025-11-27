@@ -1,5 +1,5 @@
 
-        ID: {{song.id}}  TITLE: {{song.title}}  ARTIST: {{song.artist}} VOTE: {{song.votes}} 
+        ID: {{song.id}}  TITLE: {{song.title}}  ARTIST: {{song.artist}} RELESAED:{{song.dateReleased}} PRICE:{{song.price}} VOTE: {{song.votes}} 
            <br/>    
         @if(song.votes >= 10) {
            <button (click)="voteDown()">Remove Vote</button>

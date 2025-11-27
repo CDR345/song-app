@@ -1,5 +1,5 @@
 <h2>List of songs</h2>
-
+<app-song-add></app-song-add><br/><br/>
     @for(sg of songs; track sg.id) {
         <app-song [song]="sg"></app-song>
     }

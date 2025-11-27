@@ -1,0 +1,27 @@
+<h2>Add a song </h2>
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+<div>
+   <div>
+        <label for="title">Song Title:</label>
+        <input type="text" formControlName="title" placeholder="title"/>
+   </div><br/>
+   <div>
+        <label for="artist">Song Artist:</label>
+        <input type="text" formControlName="artist" placeholder="artist"/>
+   </div><br/>   
+   <div>
+        <label for="dateReleased">Song Released:</label>
+        <input type="date" formControlName="dateReleased" placeholder="dateReleased"/>
+   </div> <br/>
+   <div>
+        <label for="price">Price:</label>
+        <input type="number" formControlName="price" placeholder="price"/>
+   </div> <br/> 
+   <div>
+        <label for="vote">vote:</label>
+        <input type="number" formControlName="votes" placeholder="vote"/>
+   </div> <br/>  
+</div>
+    <button type="submit">Add Song</button>
+</form>
+    
